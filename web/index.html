@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cable Route Map - Free Version</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="panel">
+    <h3>Cable Route Editor (100% FREE Map)</h3>
+
+    <textarea id="coordsInput" rows="4" cols="50"
+        placeholder="Enter lat,lng per line"></textarea><br><br>
+
+    <button onclick="drawRoute()">Draw Route</button>
+    <button onclick="saveRoute()">Save Route</button>
+
+    <br><br>
+
+    <input type="file" id="photoUpload" accept="image/*">
+    <button onclick="addPhoto()">Attach Photo to Selected Point</button>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
